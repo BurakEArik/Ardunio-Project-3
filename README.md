@@ -57,4 +57,4 @@ void soscode(int x) {
 ```
 # How to Install
 1. Setup circuit same as diagram with componeents
-2. Upload the ![code](Code.ino)
+2. Upload the [code](Code.ino)
