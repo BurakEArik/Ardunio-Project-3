@@ -58,7 +58,7 @@ void soscode(int x) {
 # How to Install
 1. Build the circuit with components as shown in the diagram
 2. Upload the [code](Code.ino)
-3. Change the properties of the serial command prompt to "no line break". Install code-2 instead
+3. Change the properties of the serial command prompt to "no line break". Install [code-2](Code-2.ino) instead
 4. Type "SOS" or "sos" Serial command prompt
 5. Thats it !
 
