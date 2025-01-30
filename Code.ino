@@ -6,34 +6,34 @@ void setup() {
 }
 
 void loop() {
-  if (Serial.available() > 0) {                   // Eğer bilgisayardan veri geldiyse
-    String receivedString = Serial.readString();  // Tüm gelen veriyi oku
+  if (Serial.available() > 0) {                   // If data came from the computer
+    String receivedString = Serial.readString();  // Read all incoming data
 
-    if (receivedString == "SOS" || receivedString == "sos") {                // "SOS" komutu geldiyse
-      soscode(red);  // LED'i SOS koduyla yak
+    if (receivedString == "SOS" || receivedString == "sos") {                // If the "SOS" command came
+      soscode(red);  // Light up the LED with SOS code
     }
 
     Serial.print("You typed: ");
-    Serial.println(receivedString);  // Gelen veriyi ekrana yazdır
+    Serial.println(receivedString);  // Print incoming data to the screen
   }
 }
 
 void soscode(int x) {
-  for (int i = 0; i < 3; i++) {  // 3 kısa yanıp sönme
+  for (int i = 0; i < 3; i++) {  // 3 short flashes
     digitalWrite(x, HIGH);
     delay(200);
     digitalWrite(x, LOW);
     delay(500);
   }
 
-  for (int i = 0; i < 3; i++) {  // 3 uzun yanıp sönme
+  for (int i = 0; i < 3; i++) {  // 3 long flashes
     digitalWrite(x, HIGH);
     delay(700);
     digitalWrite(x, LOW);
     delay(500);
   }
 
-  for (int i = 0; i < 3; i++) {  // 3 kısa yanıp sönme
+  for (int i = 0; i < 3; i++) {  // 3 short flashes
     digitalWrite(x, HIGH);
     delay(200);
     digitalWrite(x, LOW);
