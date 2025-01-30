@@ -7,3 +7,5 @@ This project use lamp and Serial command prompt for make S.O.S. code.
 - Wires
 - Ardunio R3
 
+# Circuit Diagram
+![Circuit Diagram](circuit.png)
